@@ -1,5 +1,5 @@
 """
-Flask-Blogging
+Bearword Blog
 --------------
 
 Flask-Blogging is a Flask extension for adding blogging support to
@@ -32,7 +32,7 @@ import ast
 
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
-with open('flask_blogging/__init__.py', 'rb') as f:
+with open('bearword_blog/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
 
@@ -47,12 +47,12 @@ def get_requirements(suffix=''):
     return rv
 
 setup(
-    name='Flask-Blogging',
+    name='bearword_blog',
     version=version,
-    url='https://github.com/gouthambs/Flask-Blogging',
+    url='https://github.com/bearword/bearword_blog',
     license='MIT',
-    author='Gouthaman Balaraman',
-    author_email='gouthaman.balaraman@gmail.com',
+    author='John Hoffer',
+    author_email='hoffexi@gmail.com',
     description='A flask extension for adding Markdown blog support to your site',
     long_description=__doc__,
     packages=find_packages(),
