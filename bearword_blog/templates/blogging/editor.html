@@ -1,7 +1,5 @@
 {% extends 'blogging/base.html' %}
 {% block extrastyle %}
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-markdown/2.10.0/css/bootstrap-markdown.min.css"
-      rel="stylesheet"/>
 {% endblock extrastyle %}
 {% block main %}
 <form class="form-horizontal" action="{{url_for('blogging.editor', post_id=post_id or None)}}" method="POST">
@@ -58,10 +56,4 @@
 {% endblock main %}
 
 {% block extrajs %}
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-markdown/2.10.0/js/bootstrap-markdown.js">
-    </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-markdown/2.10.0/js/bootstrap-markdown.min.js">
-    </script>
 {% endblock extrajs %}

@@ -15,7 +15,7 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         return '<User %r>' % self.username
-     
+
     def get_name(self):
         return self.username
 
@@ -94,5 +94,5 @@ def logout():
 
 
 if __name__ == "__main__":
-    
+
     app.run(debug=True, port=8000, use_reloader=True)

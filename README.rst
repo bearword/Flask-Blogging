@@ -59,8 +59,6 @@ Dependencies
 - `Flask-WTF <https://github.com/lepture/flask-wtf>`_
 - `Flask-FileUpload <https://github.com/Speedy1991/Flask-FileUpload>`_
 - `Markdown <https://pythonhosted.org/Markdown/>`_
-- `Bootstrap <http://getbootstrap.com/>`_
-- `Bootstrap-Markdown <https://github.com/toopay/bootstrap-markdown>`_
 - `Markdown-js <https://github.com/evilstreak/markdown-js>`_
 
 
