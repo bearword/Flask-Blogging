@@ -11,7 +11,6 @@ features out of the box:
 - Models to store blog
 - Authentication of User's choice
 - Sitemap, ATOM support
-- Disqus support for comments
 - Permissions enabled to control which users can create/edit blogs
 - Incorporates Flask-Cache for fast rendering
 - Well documented, tested, and extensible design

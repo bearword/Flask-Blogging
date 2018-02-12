@@ -28,7 +28,6 @@ Out of the box, Flask-Blogging has support for the following:
 - Models to store blog
 - Authentication of User's choice
 - Sitemap, ATOM support
-- Disqus support for comments
 - Open Graph meta tags
 - Permissions enabled to control which users can create/edit blogs
 - Integrated Flask-Cache based caching for optimization
@@ -52,7 +51,6 @@ Quick Start Example
     app = Flask(__name__)
     app.config["SECRET_KEY"] = "secret"  # for WTF-forms and login
     app.config["BLOGGING_URL_PREFIX"] = "/blog"
-    app.config["BLOGGING_DISQUS_SITENAME"] = "test"
     app.config["BLOGGING_SITEURL"] = "http://localhost:8000"
     app.config["BLOGGING_SITENAME"] = "My Site"
     app.config["BLOGGING_KEYWORDS"] = ["blog", "meta", "keywords"]
@@ -367,8 +365,6 @@ keys that are currently supported include:
 - ``BLOGGING_TWITTER_USERNAME`` (*str*): @name to tag social sharing link with.
 - ``BLOGGING_RENDER_TEXT`` (*bool*): Value to specify if the raw text (markdown)
   should be rendered to HTML. (default ``True``)
-- ``BLOGGING_DISQUS_SITENAME`` (*str*): Disqus sitename for comments.
-  A ``None`` value will disable comments. (default ``None``)
 - ``BLOGGING_URL_PREFIX`` (*str*) : The prefix for the URL of blog posts. A
   ``None`` value will have no prefix. (default ``None``)
 - ``BLOGGING_FEED_LIMIT`` (*int*): The number of posts to limit to in the feed.

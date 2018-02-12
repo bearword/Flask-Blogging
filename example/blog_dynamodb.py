@@ -8,7 +8,6 @@ from flask_fileupload import FlaskFileUpload
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "secret"  # for WTF-forms and login
 app.config["BLOGGING_URL_PREFIX"] = "/blog"
-app.config["BLOGGING_DISQUS_SITENAME"] = "test"
 app.config["BLOGGING_SITEURL"] = ""
 app.config["BLOGGING_SITENAME"] = "My Site"
 app.config["BLOGGING_ALLOW_FILEUPLOAD"] = True
