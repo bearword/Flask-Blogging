@@ -29,7 +29,6 @@ Out of the box, Flask-Blogging has support for the following:
 - Authentication of User's choice
 - Sitemap, ATOM support
 - Disqus support for comments
-- Google analytics for usage tracking
 - Open Graph meta tags
 - Permissions enabled to control which users can create/edit blogs
 - Integrated Flask-Cache based caching for optimization
@@ -370,8 +369,6 @@ keys that are currently supported include:
   should be rendered to HTML. (default ``True``)
 - ``BLOGGING_DISQUS_SITENAME`` (*str*): Disqus sitename for comments.
   A ``None`` value will disable comments. (default ``None``)
-- ``BLOGGING_GOOGLE_ANALYTICS`` (*str*): Google analytics code for usage
-  tracking. A ``None`` value will disable google analytics. (default ``None``)
 - ``BLOGGING_URL_PREFIX`` (*str*) : The prefix for the URL of blog posts. A
   ``None`` value will have no prefix. (default ``None``)
 - ``BLOGGING_FEED_LIMIT`` (*int*): The number of posts to limit to in the feed.
